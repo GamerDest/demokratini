@@ -463,7 +463,7 @@ ul.main-nav.show-it {
 
 /* Let's optimise it for mobile devices */
 
-@media (max-width: 1200px){
+@media (max-width: 720px){
   .btn-lg {
     padding: .8em 3em;
     font-size: .8em;
@@ -533,7 +533,7 @@ ul.main-nav.show-it {
     font-size: 1.4em;
   }
   .contact-banner {
-    padding: 2em 2em 28em 2em;
+    padding: 2em 2em 23em 2em;
 
   }
   .contact-banner h1 {
@@ -557,21 +557,30 @@ ul.main-nav.show-it {
     display: block;
     border-radius: 100%;
     margin: 0px auto;
-    height: 20vw;
+    height: 85px;
   }
   .fons{
     background-color: #fff;
   border-radius: 14px;
   padding: 20px ;
   }
+  #seko span{
+    font-size: 3rem;
+  }
 }
+
+
+
+
 .testimonial-swiper img{
   display: flex;
   border-radius: 100%;
-  height:40vh;
+  height:300px;
   margin: 10px auto;
 }
-
+.sveiciens{
+  font-size: 0.9em;
+}
 .sponsori{
   display: -webkit-flex;
   display: flex;
@@ -579,27 +588,53 @@ ul.main-nav.show-it {
   max-width: 1200px;
   margin: 0 auto;
   height: 15vh;
-  
+  align-items: center;
   justify-items: center;
   background-color: white;
   border-radius: 14px;
 }
 .sponsori img{
-  margin-top: 10px;
-  height: 10vh;
+  height: 80px;
 }
-.sveiciens{
-  font-size: 0.9em;
-}
+
 .fons{
   margin-top: 15px;
   background-color: #fff;
   border-radius: 14px;
 }
+
+
+
+
 @media (min-width: 720px){
   .fons{
     display: flex;
     width: 100%;
     justify-content: space-around;
   }
+}
+
+
+
+
+
+@media (max-width: 1000px) and (min-width:721px){
+
+.sponsori{
+  flex-wrap: wrap;
+    background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.sponsori img{
+  background-color: white;
+  height: 5vw;
+}
+
+.fons{
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 20px ;
+}
 }
