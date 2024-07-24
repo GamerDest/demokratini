@@ -280,6 +280,7 @@ h1.heading.pink:after {
 
 /* Contact Banner */
 .contact-banner {
+  display: flex;
   background: url(../assets/bg-pat.png) #664fee repeat;
   color: #fff;
   padding: 6em;
@@ -462,7 +463,7 @@ ul.main-nav.show-it {
 
 /* Let's optimise it for mobile devices */
 
-@media (max-width: 720px){
+@media (max-width: 1200px){
   .btn-lg {
     padding: .8em 3em;
     font-size: .8em;
@@ -532,13 +533,36 @@ ul.main-nav.show-it {
     font-size: 1.4em;
   }
   .contact-banner {
-    padding: 2em;
+    padding: 2em 2em 28em 2em;
+
   }
   .contact-banner h1 {
     font-size: 2em;
   }
   .footer {
     padding: 1em 0em;
+  }
+  .sponsori{
+    flex-wrap: wrap;
+    background-color: white;
+  }
+  .sponsori img{
+    background-color: white;
+    height: 3vw;
+  }
+  .main-nav{
+    visibility: hidden;
+  }
+  .testimonial-box img{
+    display: block;
+    border-radius: 100%;
+    margin: 0px auto;
+    height: 20vw;
+  }
+  .fons{
+    background-color: #fff;
+  border-radius: 14px;
+  padding: 20px ;
   }
 }
 .testimonial-swiper img{
@@ -549,16 +573,33 @@ ul.main-nav.show-it {
 }
 
 .sponsori{
+  display: -webkit-flex;
   display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   height: 15vh;
-  justify-content: space-around;
+  
   justify-items: center;
   background-color: white;
-  padding: 20px 30px;
   border-radius: 14px;
 }
-
+.sponsori img{
+  margin-top: 10px;
+  height: 10vh;
+}
 .sveiciens{
   font-size: 0.9em;
 }
-
+.fons{
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 14px;
+}
+@media (min-width: 720px){
+  .fons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
