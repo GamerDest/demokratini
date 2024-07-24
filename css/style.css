@@ -427,8 +427,6 @@ ul.main-nav {
   padding-right: 20px;
   display: flex;
   justify-content: flex-end;
-  opacity: 0;
-  visibility: hidden;
   transition: .25s all;
 }
 ul.main-nav li {
