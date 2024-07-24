@@ -587,8 +587,6 @@ ul.main-nav.show-it {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  height: 15vh;
-  align-items: center;
   justify-items: center;
   background-color: white;
   border-radius: 14px;
@@ -601,6 +599,7 @@ ul.main-nav.show-it {
   margin-top: 15px;
   background-color: #fff;
   border-radius: 14px;
+  padding: 20px;
 }
 
 
